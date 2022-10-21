@@ -1,0 +1,159 @@
+.continfo {
+  position: absolute;
+  text-align: center;
+  /* -webkit-backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  background-color: rgba(35, 35, 35, 0.37);
+  width: 75%;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  color: rgb(199, 199, 199);
+  padding: 10px 0;
+  transform: translate(-50%, -50%);
+  box-shadow: #0000002f 1px 7px 9px 0px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.459);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(137, 236, 253);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 217, 255);
+}
+
+.tow {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tow h5 {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.tow .imges {
+  width: 50%;
+  padding: 10px;
+  /* background-color: blue; */
+}
+
+.tow .name {
+  z-index: 5;
+  /* background-color: red; */
+  width: 50%;
+  padding: 10px;
+}
+
+.tow .name input,
+textarea {
+  padding: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  outline: none;
+  height: 45px;
+  background: transparent;
+  background-color: rgba(35, 35, 35, 0.185);
+  backdrop-filter: blur(8px);
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #0000002f 1px 7px 9px 0px;
+  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="file" i] {
+  padding: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  outline: none;
+  height: 250px;
+  background: transparent;
+  background-color: rgba(35, 35, 35, 0.185);
+  backdrop-filter: blur(8px);
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: #0000002f 1px 7px 9px 0px;
+
+  border: none;
+  width: 100%;
+}
+
+#file-upload-button {
+  background-color: red !important;
+}
+.button {
+  margin-bottom: 15px;
+}
+
+.mmmm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mmmm .mmmm2 {
+  width: 49%;
+}
+
+.chack {
+  width: 50%;
+}
+.chack input {
+  height: 20px !important;
+  width: 20px !important;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chack h5 {
+  text-align: left !important;
+}
+
+.chack2 {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.option {
+  width: 100% !important;
+}
+
+Select {
+  width: 100% !important;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  outline: none;
+  height: 45px;
+  background: transparent;
+  background-color: rgba(35, 35, 35, 0.068);
+  backdrop-filter: blur(8px);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+Select:focus-within {
+  color: rgb(0, 0, 0) !important;
+}

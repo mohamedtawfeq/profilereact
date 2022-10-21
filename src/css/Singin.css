@@ -1,0 +1,131 @@
+.content {
+  position: absolute;
+  text-align: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  background-color: rgb(35 35 35 / 22%);
+  width: 40%;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  padding-top: 50px;
+  transform: translate(-50%, -50%);
+  box-shadow: #0000002f 1px 7px 9px 0px;
+}
+
+.content h2 {
+  color: white;
+}
+
+.content .img1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: -5%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  box-shadow: #212121 1px 7px 9px 0px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img1 img {
+  object-fit: cover;
+  max-width: 250px;
+}
+
+.inputBox {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 15px;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  color: #7a7a7a;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(137, 236, 253);
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 12px;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #5050506c;
+  border-radius: 8px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 38px;
+}
+
+.btnSin {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.btnSin span {
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  text-shadow: #000000cc 4px 4px 20px;
+}
+
+.btnSin button {
+  background-color: rgb(137, 236, 253);
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 25px;
+  box-shadow: #0000002f 1px 7px 9px 0px;
+  font-weight: bold;
+}
+
+.btnSin button:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+  /* background-color: transparent; */
+}
+
+.btnSin span:hover {
+  color: rgb(137, 236, 253);
+}

@@ -1,0 +1,77 @@
+.Loading {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.938);
+  display: flex;
+  justify-content: center;
+}
+
+/* body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #1b1b1b;
+  display: grid;
+  place-items: center;
+
+  --size: 3rem;
+  --margin: 0.25rem;
+} */
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.svg-container {
+  width: 30%;
+}
+
+.hex {
+  position: relative;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: var(--anim-delay);
+  transform-origin: 50% 50%;
+  animation-name: growIn;
+}
+
+[data-index="1"] {
+  --anim-delay: 300ms;
+}
+
+[data-index="2"] {
+  --anim-delay: 400ms;
+}
+
+[data-index="3"] {
+  --anim-delay: 500ms;
+}
+
+[data-index="4"] {
+  --anim-delay: 600ms;
+}
+
+[data-index="5"] {
+  --anim-delay: 700ms;
+}
+
+[data-index="6"] {
+  --anim-delay: 800ms;
+}
+
+[data-index="7"] {
+  --anim-delay: 900ms;
+}
+
+@keyframes growIn {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  }
+  20%,
+  70% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
